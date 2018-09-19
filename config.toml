@@ -9,22 +9,36 @@ pygmentsCodeFences = true
 pygmentsStyle = "monokailight"
 
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir= false
+defaultContentLanguageInSubdir= true
 enableMissingTranslationPlaceholders = false
 
 
-# [Languages]
-# [Languages.en]
-# title = "Documentation for Hugo docDock"
-# weight = 1
-# languageName = "English"
-# 
-# [Languages.fr]
-# title = "Documentation du thème docDock"
-# weight = 2
-# languageName = "Français"
+[Languages]
+[Languages.en]
+title = "Documentation for Hugo docDock"
+weight = 1
+languageName = "English"
 
+[Languages.jp]
+title = "ドキュメンテーション"
+weight = 2
+languageName = "日本語"
 
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "about hugo"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "/about/"
+    weight = -110
+
+  [[menu.main]]
+    name = "getting started"
+    post = "<span class='alert'>New!</span>"
+    pre = "<i class='fa fa-road'></i>"
+    url = "/getting-started/"
+    weight = -100
 
 
 [params]
